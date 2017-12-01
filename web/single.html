@@ -17,7 +17,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/project_logport/css/imported.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/project_logport/css/style.css" rel="stylesheet" type="text/css" media="all"/> 
 <!-- js -->
 <script src="js/jquery.min.js"></script>
 <!-- //js -->
@@ -37,189 +38,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'></head>
 	
-<body>
-<!-- header -->
-	<div class="header">
-			<div class="header-grid">
-					<div class="container">
-				<div class="header-left animated wow fadeInLeft" data-wow-delay=".5s">
-					<ul>
-					<li><i class="glyphicon glyphicon-headphones"></i><a href="#">24x7 live support</a></li>
-						<li><i class="glyphicon glyphicon-envelope" ></i><a href="mailto:info@example.com">@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" ></i>+1234 567 892</li>
-						
-					</ul>
-				</div>
-				<div class="header-right animated wow fadeInRight" data-wow-delay=".5s">
-				<div class="header-right1 ">
-					<ul>
-		
-						<li><i class="glyphicon glyphicon-log-in" ></i><a href="login.html">Login</a></li>
-						<li><i class="glyphicon glyphicon-book" ></i><a href="register.html">Register</a></li>
-					</ul>
-				</div>
-				<div class="header-right2">
-					<div class="cart box_1">
+<body> 
+        <!--Header--> 
+        <ul> 
+          <li><a href="/project_logport/index.html">Home</a></li> 
+          <li><a href="/project_logport/products.html">Products</a></li>
+          <li><a href="/project_logport/contact.html">Contact</a></li>
+          <li><a href="/project_logport/logout.html">Logout</a></li> 
+          <li style="float: right; font-style: italic"><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></li>  
+          <li style="float:right">   
+              <div class="cart box_1"> 
 						<a href="checkout.html">
 							<h3> <div class="total">
 								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
 								<img src="images/cart.png" alt="" />
 							</h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
-					</div>	
-				</div>
-				<div class="clearfix"> </div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-			</div>
-			<div class="container">
-			<div class="logo-nav">
-				
-					<nav class="navbar navbar-default">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header nav_2">
-						<button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						 <div class="navbar-brand logo-nav-left wow fadeInLeft animated" data-wow-delay=".5s">
-							<h1 class="animated wow pulse" data-wow-delay=".5s"><a href="index.html">Classic<span>Style</span></a></h1>
-						</div>
-
-					</div> 
-					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-						<ul class="nav navbar-nav">
-							<li ><a href="index.html" class="act">Home</a></li>	
-							<!-- Mega Menu -->
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <b class="caret"></b></a>
-								<ul class="dropdown-menu multi">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu1</h6>
-												
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="products.html">Bags</a></li>
-												<li><a href="products.html">Caps & Hats</a></li>
-												<li><a href="products.html">Hoodies & Sweatshirts</a></li>
-										
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu2</h6>
-												<li><a href="products.html">Jackets & Coats</a></li>
-												<li><a href="products.html">Jeans</a></li>
-												<li><a href="products.html">Jewellery</a></li>
-												<li><a href="products.html">Jumpers & Cardigans</a></li>
-												<li><a href="products.html">Leather Jackets</a></li>
-												<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu3</h6>
-												<li><a href="products.html">Shirts</a></li>
-												<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-												<li><a href="products.html">Sunglasses</a></li>
-												<li><a href="products.html">Sweatpants</a></li>
-												<li><a href="products.html">Swimwear</a></li>
-												<li><a href="products.html">Trousers & Chinos</a></li>
-
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="row-top">
-										<div class="col-sm-6 row1">
-											<a href="products.html"><img src="images/me.jpg" alt="" class="img-responsive"></a>
-										</div>
-										<div class=" col-sm-6 row2">
-											<a href="products.html"><img src="images/me1.jpg" alt="" class="img-responsive"></a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</ul>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <b class="caret"></b></a>
-								<ul class="dropdown-menu multi multi1">
-									<div class="row">
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu1</h6>
-												
-												<li><a href="products1.html">Accessories</a></li>
-												<li><a href="products1.html">Bags</a></li>
-												<li><a href="products1.html">Caps & Hats</a></li>
-												<li><a href="products1.html">Hoodies & Sweatshirts</a></li>
-										
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu2</h6>
-												<li><a href="products1.html">Jackets & Coats</a></li>
-												<li><a href="products1.html">Jeans</a></li>
-												<li><a href="products1.html">Jewellery</a></li>
-												<li><a href="products1.html">Jumpers & Cardigans</a></li>
-												<li><a href="products1.html">Leather Jackets</a></li>
-												<li><a href="products1.html">Long Sleeve T-Shirts</a></li>
-
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<h6>Submenu3</h6>
-												<li><a href="products1.html">Shirts</a></li>
-												<li><a href="products1.html">Shoes, Boots & Trainers</a></li>
-												<li><a href="products1.html">Sunglasses</a></li>
-												<li><a href="products1.html">Sweatpants</a></li>
-												<li><a href="products1.html">Swimwear</a></li>
-												<li><a href="products1.html">Trousers & Chinos</a></li>
-
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-									<div class="row-top">
-										<div class="col-sm-6 row1">
-											<a href="products1.html"><img src="images/me2.jpg" alt="" class="img-responsive"></a>
-										</div>
-										<div class=" col-sm-6 row2">
-											<a href="products1.html"><img src="images/me3.jpg" alt="" class="img-responsive"></a>
-										</div>
-										<div class="clearfix"></div>
-									</div>
-								</ul>
-							</li>
-							
-							<li><a href="codes.html"> Codes</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-						</ul>
-					</div>
-					</nav>
-				</div>
-				
-		</div>
-	</div>
-<!-- //header -->
+				</div> 
+            </li> 
+            <!--When the user signs out it should link back to the login page-->
+        </ul>   
+    <!--//Header-->   
 <!--banner-->
 <div class="banner-top">
 	<div class="container">
-		<h2 class="animated wow fadeInLeft" data-wow-delay=".5s">Single</h2>
-		<h3 class="animated wow fadeInRight" data-wow-delay=".5s"><a href="index.html">Home</a><label>/</label>Single</h3>
+		<h2 class="animated wow fadeInLeft" data-wow-delay=".5s">Product Description</h2>
+		<h3 class="animated wow fadeInRight" data-wow-delay=".5s"><a href="/project_logport/index.html">Home</a><label>/</label>Description</h3>
 		<div class="clearfix"> </div>
 	</div>
-</div>
-	<!--content-->
+</div> 
+	<!--content--> 
 		<div class="product">
 			<div class="container">
 		<div class="col-md-3 product-bottom ">
@@ -227,28 +76,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="categories animated wow fadeInUp animated" data-wow-delay=".5s" >
 					<h3>Categories</h3>
 					<ul class="cate">
-						<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Best Selling</a> <span>(15)</span></li>
-						<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Man</a> <span>(16)</span></li>
-							<ul>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Accessories</a> <span>(2)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Coats &amp; Jackets</a> <span>(5)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Jeans</a> <span>(1)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">New Arrivals</a> <span>(0)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Suits</a> <span>(1)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Casual Shirts</a> <span>(0)</span></li>
-							</ul>
-						<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Sales</a> <span>(15)</span></li>
-						<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Woman</a> <span>(15)</span></li>
-							<ul>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Accessories</a> <span>(2)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">New Arrivals</a> <span>(0)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Dresses</a> <span>(1)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Casual Shirts</a> <span>(0)</span></li>
-								<li><i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Shorts</a> <span>(4)</span></li>
-							</ul>
-					</ul>
-				</div>
-		<!--//menu-->
+						<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Best Selling</a> <span>(15)</span><br> <br>
+						<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Effects</a> <span>(16)</span><br> <br> 
+							<ul> 
+								<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Energetic</a> <span>(2)</span><br>
+								<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Eurphoric</a> <span>(5)</span><br>
+				                <i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Happy</a> <span>(105)</span><br>
+								<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Relaxed</a> <span>(0)</span><br>
+								<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Uplifted</a> <span>(1)</span><br>
+								<i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Sleepy</a> <span>(93)</span><br> <br> 
+							</ul> 
+                        <i class="glyphicon glyphicon-menu-right" ></i><a href="products.html">Clearence</a> <span>(36)</span><br> <br> 
+					</ul> 
+				</div> 
+		<!--//menu--> 
 		<!--price-->
 				<div class="price animated wow fadeInUp animated" data-wow-delay=".5s" >
 					<h3>Price Range</h3>
@@ -268,58 +109,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<div class="clearfix"></div>
                                     </div>
                                     </div>
-			<!--//price-->
-			<!--colors-->
-			<div class="colors animated wow fadeInLeft animated" data-wow-delay=".5s" >
-					<h3>Colors</h3>
-
-                                        <div class="color-top">
-                                            <ul>
-											<li><a href="#"><i></i></a></li>
-												<li><a href="#"><i class="color1"></i></a></li>
-												<li><a href="#"><i class="color2"></i></a></li>
-												<li><a href="#"><i class="color3"></i></a></li>
-												<li><a href="#"><i class="color4"></i></a></li>
-												<li><a href="#"><i class="color5"></i></a></li>
-												<li><a href="#"><i class="color6"></i></a></li>
-												<li><a href="#"><i class="color7"></i></a></li>
-											</ul>
-                                        </div>
-                                    </div>
-									
-                                 
-			<!--//colors-->
+			<!--//price--> 
 			<div class="sellers animated wow fadeInDown" data-wow-delay=".5s">
 					
 								<h3 class="best">BEST SELLERS</h3>
 					<div class="product-head">
 					<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="images/pcc.jpg" alt=""></a>
+									<a href="single.html"><img class="img-responsive " src="/project_logport/images/pr2.jpg" alt=""></a>
 									
 								</div>
 							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html">Lorem ipsum </a></h6>
-								<span class=" price-in1"> <del>$50.00</del>$40.00</span>
-								<p>The standard chunk of Lorem Ipsum used</p>
-							</div>
-								
+								<h6 class="best2"><a href="single.html">Blue Dream </a></h6>
+								<span class=" price-in1"> <del>$40.00</del>$35.00</span>
+								<p>This is a stoner favorite.Sativa dominant hybrid. Reportedlly taste like blueberries. </p>
+							</div> 
+								 
 							<div class="clearfix"> </div>
 							</div>
 							<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="images/pcc1.jpg" alt=""></a>
-									
-								</div>
+									<a href="single.html"><img class="img-responsive " src="/project_logport/images/pr3.jpg" alt=""></a>
+									 
+								</div> 
 							<div class=" fashion-grid1">
-								<h6 class="best2"><a href="single.html">Lorem ipsum </a></h6>
-								<span class=" price-in1"> <del>$50.00</del>$40.00</span>
-								<p>The standard chunk of Lorem Ipsum used</p>
+								<h6 class="best2"><a href="single.html">Gorilla Glue #4 </a></h6>
+								<span class=" price-in1"> $40.00</span> 
+								<p>Gorilla Glue #4, developed by GG Strains, is a potent hybrid strain that delivers heavy-handed euphoria and relaxation, leaving you feeling “glued” to the couch.</p>  
 							</div>
 							<div class="clearfix"> </div>
-							</div>
-							
-							</div>
+                        </div> 
+
+							</div> 
 				</div>
 				<!---->
  	</div>
@@ -327,29 +148,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-5 grid-im">		
 		<div class="flexslider">
 			  <ul class="slides">
-			    <li data-thumb="images/si.jpg">
-			        <div class="thumb-image"> <img src="images/si.jpg" data-imagezoom="true" class="img-responsive"> </div>
-			    </li>
-			    <li data-thumb="images/si1.jpg">
-			         <div class="thumb-image"> <img src="images/si1.jpg" data-imagezoom="true" class="img-responsive"> </div>
-			    </li>
-			    <li data-thumb="images/si2.jpg">
-			       <div class="thumb-image"> <img src="images/si2.jpg" data-imagezoom="true" class="img-responsive"> </div>
+			    <li data-thumb="/project_logport/images/pr1.jpg"> 
+			        <div class="thumb-image"> <img src="/project_logport/images/pr1.jpg" data-imagezoom="true" class="img-responsive"> </div>
 			    </li> 
-			  </ul>
+			    <li data-thumb="/project_logport/images/pr1_1.jpg">  
+			         <div class="thumb-image"> <img src="/project_logport/images/pr1_1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+			    </li>
+			    <li data-thumb="/project_logport/images/pr1_1_1.jpg">
+			       <div class="thumb-image"> <img src="/project_logport/images/pr1_1_1.jpg" data-imagezoom="true" class="img-responsive"> </div>
+			    </li> 
+			  </ul> 
 		</div>
 	</div>	
 <div class="col-md-7 single-top-in">
 						<div class="span_2_of_a1 simpleCart_shelfItem">
-				<h3>Nam liber tempor cum</h3>
-				<p class="in-para"> There are many variations of passages of Lorem Ipsum.</p>
-			    <div class="price_single">
-				  <span class="reducedfrom item_price">$140.00</span>
+				<h3>Pineapple Express</h3> 
+				<p class="in-para"> Pineapple Express combines the potent and flavorful forces of parent strains Trainwreck and Hawaiian. The smell is likened to fresh apple and mango, with a taste of pineapple, pine, and cedar. This hard-hitting sativa-dominant hybrid provides a long-lasting energetic buzz perfect for productive afternoons and creative escapes.</p> 
+			    <div class="price_single"> 
+				  <span class="reducedfrom item_price">$25.00</span>
 				 <a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add To Cart</a>
 				 <div class="clearfix"></div>
 				</div>
-				
-				 
 			   
 			<div class="clearfix"> </div>
 			</div>
@@ -358,21 +177,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
 						  <ul class="resp-tabs-list">
 						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
-							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Additional Information</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Strain Attributes</span></li>
 							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Reviews</span></li>
 							  <div class="clearfix"></div>
 						  </ul>				  	 
 							<div class="resp-tabs-container">
 							    <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Product Description</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
 									<div class="facts">
-									  <p > There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </p>
+									  <p > There are many variations of this strain available, but the majority have suffered alteration </p>
 										<ul>
-											<li>Research</li>
-											<li>Design and Development</li>
-											<li>Porting and Optimization</li>
-											<li>System integration</li>
-											<li>Verification, Validation and Testing</li>
-											<li>Maintenance and Support</li>
+										Brought by the premium cannabis breeders G13 labs, the Pineapple Express strain is the result of a wonderful hybrid of Trainwreck and Hawaiian Sativa. Pineapple Express strain reviews report a tropical, fruity aroma reminiscent of pineapple, pine and cedar. The Pineapple Express strain has a powerful high, so brace yourself for an energetic, uplifting experience. Effects The Pineapple Express effects are a relaxed, uplifting high, with happy, euphoric feelings providing perfect relief for people with stress, depression or pain. The wonderful combination of relaxation and new energy is great for people looking for a positive, fun high. Medical Pineapple Express strain effects can benefit people with a lack of appetite, headaches and mood disorders. Negative Pineapple Express effects include dry mouth, dry eyes, dizziness, headaches and paranoia. THC Content Pineapple Express strain reviews reveal a 17% THC content and CBD of 0.17%, embedded in its light green buds with a thick, sticky resin.  
 										</ul>         
 							        </div>
 
@@ -380,16 +194,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Additional Information</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
 										<div class="facts1">
 					
-						<div class="color"><p>Color</p>
-							<span >Blue, Black, Red</span>
+						<div class="color"><p>Effects</p>
+							<span >Energetic, </span>
 							<div class="clearfix"></div>
 						</div>
 						<div class="color">
-							<p>Size</p>
-							<span >S, M, L, XL</span>
+							<p>Medical Uses</p>
+							<span >Fill in later</span>
+							<div class="clearfix"></div> 
+						</div>
+                        <div class="color">
+							<p>Negatives</p>
+							<span >Dizzy, Dry Eyes, Dry Mouth, Headache, Paranoid</span>
 							<div class="clearfix"></div>
 						</div>
-					        
+					         
 			 </div>
 
 								</div>									
@@ -424,9 +243,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 					</div>
 			
-</div>
+</div> 
 <!----->
 <div class="clearfix"> </div>
+<!--
 <div class=" col-md-si">
 						<div class="col-sm-4 item-grid simpleCart_shelfItem">
 							<div class="grid-pro">
@@ -499,71 +319,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 			</div class="clearfix"></div>
 			</div>			
-		</div>
+		</div> 
+-->
 				<!--//products-->
-<div class="social animated wow fadeInUp" data-wow-delay=".1s">
-	<div class="container">
-		<div class="col-sm-3 social-ic">
-			<a href="#">FACEBOOK</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">TWITTER</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">GOOGLE+</a>
-		</div>
-		<div class="col-sm-3 social-ic">
-			<a href="#">PINTEREST</a>
-		</div>
-	<div class="clearfix"></div>
-	</div>
-</div>
-
+</div class="clearfix"></div> 
 <!-- footer -->
 	<div class="footer">
 		<div class="container">
 		<div class="footer-top">
 		<div class="col-md-9 footer-top1">
-		<h4>Duis aute irure dolor in reprehenderit in voluptate </h4>
-		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.Excepteur sint occaecat cupidatat 
-						non proident Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
 		</div>
-		<div class="col-md-3 footer-top2">
-		<a href="contact.html">Contact Us</a>
-		</div>
-		<div class="clearfix"> </div>
-		</div>
-			<div class="footer-grids">
-				<div class="col-md-4 footer-grid animated wow fadeInLeft" data-wow-delay=".5s">
-					<h3>About Us</h3>
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse.<span>Excepteur sint occaecat cupidatat 
-						non proident, sunt in culpa qui officia deserunt mollit.</span></p>
-				</div>
-				<div class="col-md-4 footer-grid animated wow fadeInLeft" data-wow-delay=".6s">
-					<h3>Contact Info</h3>
-					<ul>
-						<li><i class="glyphicon glyphicon-map-marker" ></i>1234k Avenue, 4th block, <span>New York City.</span></li>
-						<li class="foot-mid"><i class="glyphicon glyphicon-envelope" ></i><a href="mailto:info@example.com">info@example.com</a></li>
-						<li><i class="glyphicon glyphicon-earphone" ></i>+1234 567 567</li>
-					</ul>
-				</div>
-				<div class="col-md-4 footer-grid animated wow fadeInLeft" data-wow-delay=".7s">
-				<h3>Sign up for newsletter </h3>
-				<form>
-					<input type="text" placeholder="Email"  required="">
-					<input type="submit" value="Submit">
-				</form>
-			
-				</div>
-			
-				<div class="clearfix"> </div>
-			</div>
-			
 			<div class="copy-right animated wow fadeInUp" data-wow-delay=".5s">
-				<p>&copy 2016 Classic Style. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+				<p>&copy 2017 Dirty Moore and the boys. All rights reserved</p>
 			</div>
 		</div>
-	</div>
+	</div> 
 <!-- //footer -->
 <script src="js/imagezoom.js"></script>
 
