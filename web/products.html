@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<!--https://github.com/Hardeepcoder/EasyShop---Laravel-5.3-Tutorials-->
+<!DOCTYPE html> 
 <html> 
    <head>
-        <link type="text/css" rel="stylesheet" href="/project_logport/css/style.css"/> 
-        <link type="text/css" rel="stylesheet" href="/web/css/style.css"/>       
-        <title>Home Page</title> 
+        <link type="text/css" rel="stylesheet" href="/web/css/style.css"/> 
+        <link type="text/css" rel="stylesheet" href="/web/css/style2.css"/>       
+        <title>Home Page</title>   
  <!-- for-mobile-apps -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -13,13 +12,14 @@
                     function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+          <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style2.css" rel="stylesheet" type="text/css" media="all" />
        <!-- Icon Library -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
  
-<!-- js -->
+<!-- js -->  
        <script src="js/jquery.min.js"></script>
-<!-- //js -->
+<!-- //js --> 
 <!-- cart -->
        <script src="js/simpleCart.min.js"></script>
 <!-- cart -->
@@ -64,6 +64,13 @@ document.getElementById('amit').innerHTML=val;
 }  
 }  
   
+      $(function(){
+       $('#tp_otherinfo').find('img').each(function(){
+           var srcpath = $(this).attr('src');
+           srcpath = srcpath.replace('item_id',domain_name);
+           $(this).attr('src',srcpath);
+       });
+    });
 </script>  
 <!-- //Ajax Stuff --> 
        
@@ -141,12 +148,11 @@ document.getElementById('amit').innerHTML=val;
 			<div class="sellers animated wow fadeInDown" data-wow-delay=".5s">
 					
 								<h3 class="best">BEST SELLERS</h3>
-					<div class="product-head">
+					<div class="product-head"> 
 					<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/project_logport/images/pr2.jpg" alt=""></a>
-									
-								</div>
+									<a href="single.html"><img class="img-responsive " src="https://cannabis.net/drive/1000/3739_z75o_Blue-Dream-Hybrid-WM.jpg" alt=""></a> 
+								</div> 
 							<div class=" fashion-grid1">
 								<h6 class="best2"><a href="single.html">Blue Dream </a></h6>
 								<span class=" price-in1"> <del>$40.00</del>$35.00</span>
@@ -157,8 +163,7 @@ document.getElementById('amit').innerHTML=val;
 							</div>
 							<div class="product-go">
 						<div class=" fashion-grid">
-									<a href="single.html"><img class="img-responsive " src="/project_logport/images/pr3.jpg" alt=""></a>
-									 
+									<a href="single.html"><img class="img-responsive " src="https://cannabis.net/drive/1000/3743_CB3y_Gorilla-Glue-WM.jpg" alt=""></a> 
 								</div> 
 							<div class=" fashion-grid1">
 								<h6 class="best2"><a href="single.html">Gorilla Glue #4 </a></h6>
@@ -174,96 +179,28 @@ document.getElementById('amit').innerHTML=val;
                 </div> 
 
     <!--Products-->   
-    <div class="mid-popular">
-				<div class="col-sm-4 item-grid item-gr  simpleCart_shelfItem">
+    <div class="mid-popular"> 
+        	<% for (int i = 0; i < items.length; i++){ %>
+                  <div class="col-sm-4 item-grid item-gr  simpleCart_shelfItem">
 							<div class="grid-pro">
 								<div  class=" grid-product " >
 									<figure>		
 										<a href="/web/single.html"> 
 											<div class="grid-img">
-												<img  src="images/pr1.jpg" class="img-responsive" alt="">
-											</div> 	
-                                            <div class="grid-img">
-												<img  src="images/pr1_1.jpg" class="img-responsive"  alt="">
-											</div>	
-                                            <div class="grid-img">
-												<img  src="images/pr1.jpg" class="img-responsive" alt="">
-											</div>  
+												<img  src="images/item_id.jpg" class="img-responsive" alt="">
+											</div> 	  
 										</a>		 
-									</figure>	
+									</figure>	 
 								</div>
 								<div class="women">
-									<h6><a href="/web/single.html">Pineapple Express</a></h6>
-									<p ><em class="item_price">$25.00</em></p>
+									<h6><a href="/web/single.html"><div id="item_name"></div></a></h6>
+									<p ><em class="item_price">$<div id="item_price"></div></em></p>
 									<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add To Cart</a>
 								</div>
 							</div> 
-						</div>
-						<div class="col-sm-4 item-grid item-gr simpleCart_shelfItem">
-							<div class="grid-pro">
-								<div  class=" grid-product " > 
-									<figure>		
-										<a href="/web/single.html">
-											<div class="grid-img">
-												<img  src="images/pr3.jpg" class="img-responsive" alt="">
-											</div>
-											<div class="grid-img">
-												<img  src="images/pr2.jpg" class="img-responsive"  alt="">
-											</div>			
-										</a>		
-									</figure>	
-								</div>
-								<div class="women">  
-									<h6><a href="/web/single.html">Blue Dream</a></h6>
-									<p ><em class="item_price">$15.00</em></p> 
-									<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add To Cart</a>
-								</div>
-							</div>
-                        </div> 
-        					<div class="col-sm-4 item-grid item-gr simpleCart_shelfItem">
-							<div class="grid-pro">
-								<div  class=" grid-product " > 
-									<figure>		
-										<a href="/web/single.html">
-											<div class="grid-img">
-												<img  src="images/pr3.jpg" class="img-responsive" alt="">
-											</div>
-											<div class="grid-img">
-												<img  src="images/pr3.jpg" class="img-responsive"  alt="">
-											</div>			
-										</a>		 
-									</figure>	
-								</div>
-								<div class="women">  
-									<h6><a href="/web/single.html">Gorilla Glue#4 </a></h6>
-									<p ><em class="item_price">$40.00</em></p>  
-									<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add To Cart</a>
-								</div>
-							</div> 
-                        </div>
-                        			<div class="col-sm-4 item-grid item-gr simpleCart_shelfItem">
-							<div class="grid-pro">
-								<div  class=" grid-product " > 
-									<figure>		
-										<a href="/web/single.html">
-											<div class="grid-img">
-												<img  src="images/pr3.jpg" class="img-responsive" alt="">
-											</div>
-											<div class="grid-img">
-												<img  src="images/pr2.jpg" class="img-responsive"  alt="">
-											</div>			
-										</a>		
-									</figure>	
-								</div>
-								<div class="women">  
-									<h6><a href="/web/single.html">Blue Dream</a></h6>
-									<p ><em class="item_price">$15.00</em></p> 
-									<a href="#" data-text="Add To Cart" class="but-hover1 item_add">Add To Cart</a>
-								</div>
-							</div>
-                        </div> 
-        
-					<div class="clearfix"></div>
+						</div>  
+            <%}%>        
+<div class="clearfix"></div>
     </div> 
 <!----->
 <div class="clearfix"> </div> 
