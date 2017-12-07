@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Check Out</title> 
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" /> 
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style2.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery.min.js"></script>
+<!-- //js -->
+<!-- cart -->
+<script src="js/simpleCart.min.js"></script>
+<!-- cart -->
+<!-- for bootstrap working -->
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<!-- //for bootstrap working -->
+<!-- animation-effect -->
+<link href="css/animate.min.css" rel="stylesheet"> 
+<script src="js/wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+<!-- //animation-effect -->
+<link href='//fonts.googleapis.com/css?family=Cabin:400,500,600,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'></head>
+	
+<body> 
+    <!--Header--> 
+        <ul> 
+          <li><a href="/project_logport/index.html">Home</a></li> 
+          <li><a href="/project_logport/products.html">Products</a></li>
+          <li><a href="/project_logport/contact.html">Contact</a></li>
+          <li><a href="/project_logport/logout.html">Logout</a></li> 
+          <li style="float: right; font-style: italic"><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></li>  
+          <li style="float:right">   
+              <div class="cart box_1"> 
+						<a href="checkout.html">
+							<h3> <div class="total">
+								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
+								<img src="images/cart.png" alt="" />
+							</h3>
+						</a>
+						<div class="clearfix"> </div>
+				</div> 
+            </li> 
+            <!--When the user signs out it should link back to the login page-->
+        </ul>  
+   
+<!-- //header -->
+<!--banner-->
+<div class="banner-top">
+	<div class="container">
+		<h2 class="animated wow fadeInLeft" data-wow-delay=".5s">Checkout</h2>
+		<h3 class="animated wow fadeInRight" data-wow-delay=".5s"><a href="index.html">Home</a><label>/</label>Checkout</h3>
+		<div class="clearfix"> </div>
+	</div>
+</div>
+<!-- contact -->
+		<div class="check-out">	 
+		<div class="container">	 
+	 
+				<script>$(document).ready(function(c) {
+					$('.close1').on('click', function(c){
+						$('.cross').fadeOut('slow', function(c){
+							$('.cross').remove();
+						});
+						});	  
+					});
+			   </script>
+			<script>$(document).ready(function(c) {
+					$('.close2').on('click', function(c){
+						$('.cross1').fadeOut('slow', function(c){
+							$('.cross1').remove();
+						});
+						});	  
+					});
+			   </script>	
+			   <script>$(document).ready(function(c) {
+					$('.close3').on('click', function(c){
+						$('.cross2').fadeOut('slow', function(c){
+							$('.cross2').remove();
+						});
+						});	  
+					});
+			   </script>	
+ <table class="table animated wow fadeInLeft" data-wow-delay=".5s">
+		  <tr>
+			<th class="t-head head-it ">Item</th>
+			<th class="t-head">Price</th>
+			<th class="t-head">Quantity</th>
+			<th class="t-head">Total</th>
+		  </tr>
+		  <tr class="cross">
+			<td class="ring-in t-data">
+				<a href="single.html" class="at-in">
+					<img src="images/pcc.jpg" class="img-responsive" alt="">
+				</a>
+			<div class="sed">
+				<h5>Sed ut perspiciatis unde</h5>
+			</div>
+				<div class="clearfix"> </div>
+				<div class="close1"> </div>
+			 </td>
+			<td class="t-data">$100.00</td>
+			<td class="t-data"><div class="quantity"> 
+								<div class="quantity-select">            
+									<div class="entry value-minus">&nbsp;</div>
+										<div class="entry value"><span class="span-1">1</span></div>									
+									<div class="entry value-plus active">&nbsp;</div>
+								</div>
+							</div>
+			
+			</td>
+			<td class="t-data">$100.00</td>
+			
+		  </tr> 
+	</table>
+				<div class=" cart-total">
+			
+			 <h5 class="continue" >Cart Total</h5>
+			 <div class="price-details">
+				 <h3>Price Details</h3>
+				 <span>Total</span>
+				 <span class="total1">6200.00</span>
+				 <span>Discount</span>
+				 <span class="total1">---</span> 
+				 <span>Delivery Charges</span>
+				 <span class="total1">150.00</span>
+				 <div class="clearfix"></div>				 
+			 </div>	
+			 <ul class="total_price">
+			   <li class="last_price"> <h4>TOTAL</h4></li>	
+			   <li class="last_price"><span>6350.00</span></li>
+			   <div class="clearfix"> </div>
+			 </ul>
+			
+			 <a href="single.html">Continue Shopping</a>
+			 <a href="single.html">Pay Now</a>
+			</div> 
+			
+		
+		 </div>
+            <div class="clearfix"></div> 
+ 
+		 </div>
+		 				<!--quantity-->
+			<script>
+			$('.value-plus').on('click', function(){
+				var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)+1;
+				divUpd.text(newVal);
+			});
+
+			$('.value-minus').on('click', function(){
+				var divUpd = $(this).parent().find('.value'), newVal = parseInt(divUpd.text(), 10)-1;
+				if(newVal>=1) divUpd.text(newVal);
+			});
+			</script>
+			<!--quantity--> 
+
+<!-- footer -->
+    <div class="clearfix"></div>​ 
+	 	<div class="footer">
+		<div class="container">
+		<div class="footer-top">
+		<div class="col-md-9 footer-top1">
+		</div>
+			<div class="copy-right animated wow fadeInUp" data-wow-delay=".5s">
+				<br><p>&copy 2017 Dirty Boiz and Moore | All rights reserved</p>
+			</div>
+		</div>
+	</div> 
+<!-- //footer -->
+            <div class="clearfix"></div>  
+</body>
+</html> 
